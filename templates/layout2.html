@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+div.outset {border-style: outset;}
+.boxed {
+  border-style: outset;
+}
+
+.jumbotron
+{
+background-color:#666;
+}
+body {
+  animation: 10000ms ease-in-out infinite color-change;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: SteelBlue;
+  }
+  10% {
+    background-color: SkyBlue;
+  }
+  20% {
+    background-color: LightBlue;
+  }
+  30% {
+    background-color: PowderBlue;
+  }
+  40% {
+    background-color: Azure;
+  }
+  50% {
+    background-color: AliceBlue;
+  }
+  60% {
+    background-color: Azure;
+  }
+  70% {
+    background-color: PowderBlue;
+  }
+  80% {
+    background-color: LightBlue;
+  }
+  90% {
+    background-color: SkyBlue;
+  }
+  100% {
+    background-color: SteelBlue;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container" >
+  <div class="jumbotron">
+      <div class="text-left" >
+    <p style="color:SteelBlue ; font-size:100px ;" class="page-header" > REAL WORLD<Small style="color:Grey; font-size:40px"> object detection</Small></p>
+      </div>
+  </div>
+</div>
+{% block content %}{% endblock %}
+</body>
+</html>

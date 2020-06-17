@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: SteelBlue;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.background span:nth-child(1) {
+  color: LightBlue;
+  top: 80%;
+  left: 31%;
+  animation-duration: 11.6s;
+  animation-delay: -1.4s;
+  transform-origin: -17vw -6vh;
+  box-shadow: 40vmin 0 13.2556413279vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: SkyBlue;
+  top: 35%;
+  left: 12%;
+  animation-duration: 15.9s;
+  animation-delay: -13.2s;
+  transform-origin: -14vw 1vh;
+  box-shadow: -40vmin 0 13.5964782796vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: LightBlue;
+  top: 97%;
+  left: 77%;
+  animation-duration: 13.9s;
+  animation-delay: -0.4s;
+  transform-origin: 3vw -23vh;
+  box-shadow: -40vmin 0 10.197041332vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: Azure;
+  top: 61%;
+  left: 66%;
+  animation-duration: 13.2s;
+  animation-delay: -10.6s;
+  transform-origin: 9vw 20vh;
+  box-shadow: 40vmin 0 9.5912294099vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: Azure;
+  top: 6%;
+  left: 44%;
+  animation-duration: 14.4s;
+  animation-delay: -12s;
+  transform-origin: -10vw -4vh;
+  box-shadow: 40vmin 0 6.6139256706vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: SkyBlue;
+  top: 50%;
+  left: 12%;
+  animation-duration: 13s;
+  animation-delay: -14.8s;
+  transform-origin: 19vw -24vh;
+  box-shadow: 40vmin 0 12.0793511076vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: LightBlue;
+  top: 61%;
+  left: 15%;
+  animation-duration: 10.3s;
+  animation-delay: -7.3s;
+  transform-origin: -7vw -4vh;
+  box-shadow: 40vmin 0 5.5788314126vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: Azure;
+  top: 98%;
+  left: 54%;
+  animation-duration: 10.5s;
+  animation-delay: -10.9s;
+  transform-origin: -11vw 5vh;
+  box-shadow: 40vmin 0 9.1162200343vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: Azure;
+  top: 11%;
+  left: 49%;
+  animation-duration: 11.3s;
+  animation-delay: -3.5s;
+  transform-origin: 24vw -14vh;
+  box-shadow: -40vmin 0 8.6404168069vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: SkyBlue;
+  top: 44%;
+  left: 74%;
+  animation-duration: 10.5s;
+  animation-delay: -2s;
+  transform-origin: 12vw 19vh;
+  box-shadow: -40vmin 0 14.5673929777vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: LightBlue;
+  top: 12%;
+  left: 14%;
+  animation-duration: 12.5s;
+  animation-delay: -11.1s;
+  transform-origin: 20vw 11vh;
+  box-shadow: -40vmin 0 6.6936466847vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: Azure;
+  top: 66%;
+  left: 21%;
+  animation-duration: 12s;
+  animation-delay: -5.8s;
+  transform-origin: 8vw -10vh;
+  box-shadow: -40vmin 0 13.3648325758vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: SkyBlue;
+  top: 49%;
+  left: 88%;
+  animation-duration: 12.2s;
+  animation-delay: -7.5s;
+  transform-origin: -5vw 9vh;
+  box-shadow: 40vmin 0 6.7508802534vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: SkyBlue;
+  top: 17%;
+  left: 17%;
+  animation-duration: 16s;
+  animation-delay: -11s;
+  transform-origin: -14vw -24vh;
+  box-shadow: 40vmin 0 10.0395619498vmin currentColor;
+}
+.background span:nth-child(15) {
+  color: Azure;
+  top: 23%;
+  left: 28%;
+  animation-duration: 10.3s;
+  animation-delay: -2.1s;
+  transform-origin: -13vw -14vh;
+  box-shadow: -40vmin 0 13.5778700246vmin currentColor;
+}
+.background span:nth-child(16) {
+  color: Azure;
+  top: 67%;
+  left: 11%;
+  animation-duration: 13.7s;
+  animation-delay: -10.7s;
+  transform-origin: -1vw 21vh;
+  box-shadow: -40vmin 0 9.1221047234vmin currentColor;
+}
+.background span:nth-child(17) {
+  color: SkyBlue;
+  top: 70%;
+  left: 40%;
+  animation-duration: 10.1s;
+  animation-delay: -11.1s;
+  transform-origin: 23vw -16vh;
+  box-shadow: -40vmin 0 6.5728247459vmin currentColor;
+}
+.background span:nth-child(18) {
+  color: SkyBlue;
+  top: 86%;
+  left: 1%;
+  animation-duration: 15.6s;
+  animation-delay: -1.2s;
+  transform-origin: -11vw 12vh;
+  box-shadow: 40vmin 0 10.8455878183vmin currentColor;
+}
+.background span:nth-child(19) {
+  color: SkyBlue;
+  top: 12%;
+  left: 43%;
+  animation-duration: 13.1s;
+  animation-delay: -15.2s;
+  transform-origin: -7vw -24vh;
+  box-shadow: 40vmin 0 13.4203103005vmin currentColor;
+}
+.background span:nth-child(20) {
+  color: SkyBlue;
+  top: 35%;
+  left: 41%;
+  animation-duration: 15s;
+  animation-delay: -11.9s;
+  transform-origin: -4vw 24vh;
+  box-shadow: 40vmin 0 14.5487051994vmin currentColor;
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+div.outset {border-style: outset;}
+.boxed {
+  border-style: outset;
+}
+.centered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+</head>
+<body>
+<div class="background">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <div class="container" >
+     <div class="text-center" >
+         <p style="color:BLACK ; font-size:120px ;"  > REAL WORLD<Small style="color:DimGrey; font-size:40px"> object detection</Small></p>
+     </div>
+  </div>
+  <div class="centered">
+
+    {% block content %} {% endblock %}
+
+
+
+  </div>
+
+
+
+</div>
+</body>
+</html>

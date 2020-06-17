@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+input[type=submit] {
+  background-color: #A9A9A9;
+  color: BLACK;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #00BFFF;
+}
+
+
+.col {
+  position: relative;
+  float: center;
+  width: 50%;
+  margin: auto;
+  padding: 0 0px;
+  margin-top: 0px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+<div class="container">
+  <form action="{{url_for('select')}}">
+    <div class="row">
+      <div class="col-sm-4"></div>
+
+      <div class="col-sm-4">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col">
+      <a href="#" style="color:white" class="btn">New to Real world, Sign up!</a>
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+

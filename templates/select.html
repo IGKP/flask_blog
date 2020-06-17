@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<title>Selec-Mode Page</title>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3"></div>
+       <div class="col-sm-3">
+        <form action="{{url_for('webcam')}}">
+        <button class="btn btn-secondary btn-lg" type="submit" > OPEN WEB CAMERA </button>
+       </form>
+      </div>
+    <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <form action="{url_for('webcam')}">
+        <button class="btn btn-secondary btn-lg" type="submit" formaction="1kse.html"> UPLOAD FROM DEVICE </button>
+        </form>
+      </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+
+{% endblock content %}
